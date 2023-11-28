@@ -19,7 +19,7 @@ The model is composed of multiple coupling layers, each performing the following
 - **Affine Transformation:**
   - The primary operation within each coupling layer is an affine transformation applied to the conditioning part.
   - The transformation is defined as:
-    \[y = x \odot \exp(s) + t,\]
+    $y = x \odot \exp(s) + t,$
     where $x$ is the input, $\odot$ denotes element-wise multiplication, $s$ is the scale factor, $t$ is the translation vector, and $y$ is the transformed output.
   - The other part remains unchanged.
 
@@ -41,7 +41,7 @@ The model stacks multiple coupling layers to form a deep architecture:
 The model takes a simple base distribution, often a multivariate Gaussian distribution, and transforms it into a more complex distribution during forward propagation:
 
 - **Deforming the Distribution:**
-  - The transformations through the coupling layers progressively deform the simple base distribution to closely match the characteristics of the target data distribution.
+  - The transformations through the coupling layers progressively deform the simple base distribution to match the characteristics of the target data distribution closely.
 
 ### 4. Paper-Specific Elements:
 
@@ -57,13 +57,13 @@ The original Real-NVP paper introduces certain elements that we have not impleme
 
 By omitting these specific elements, our implementation focuses on the core architecture of Real-NVP, showcasing its ability to transform a simple distribution into a complex one through multiple coupling layers while maintaining invertibility.
 
-Adjusting the depth and configuration of the coupling layers allows for flexibility in modeling various data distributions.
+Adjusting the depth and configuration of the coupling layers allows for flexibility in modelling various data distributions.
 
 ## Implementation Details
 
 ### Framework and Dataset:
 
-The Real-NVP model has been implemented using PyTorch, a popular deep learning framework. The implementation is trained and evaluated on the MNIST dataset, a standard benchmark dataset for image classification.
+The Real-NVP model has been implemented using PyTorch, a popular deep-learning framework. The implementation is trained and evaluated on the MNIST dataset, a standard benchmark dataset for image classification.
 
 ### Model Architecture:
 
