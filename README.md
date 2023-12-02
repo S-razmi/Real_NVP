@@ -126,6 +126,6 @@ The Real-NVP model has been implemented using PyTorch, a popular deep-learning f
 
 ### Summary:
 
-This Real-NVP implementation in PyTorch follows the architecture and training configuration described in the paper. It leverages separate networks for scaling and translation functions, incorporates custom coupling layers (NVPBlocks), and utilizes a specific pattern for the number of units in each layer. The training process involves optimizing the negative log-likelihood using SGD with a carefully chosen learning rate over 100 epochs. The implementation demonstrates the application of Real-NVP to the MNIST dataset for density estimation.
+This Real-NVP implementation in PyTorch follows the architecture and training configuration described in the paper. It leverages separate networks for scaling and translation functions, incorporates custom coupling layers (NVPBlocks), and utilizes a specific pattern for the number of units in each layer. The training process involves optimizing the negative log-likelihood using Adam with a carefully chosen learning rate over 100 epochs. The implementation demonstrates the application of Real-NVP to the MNIST dataset for density estimation.
 
 This description provides an overview of the key aspects of the implementation, offering insights into the architecture, training parameters, and specific choices made during the implementation process. Adjustments and refinements can be made based on further experimentation and analysis of results.
