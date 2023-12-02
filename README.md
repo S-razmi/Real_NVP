@@ -1,4 +1,5 @@
 <div style="text-align: justify">  
+
 # Real NVP Implementation in Pytorch
 
 This project is an implementation of the Real Non-Volume Preserving (Real-NVP) networks for density estimation. The Real-NVP model is a type of normalizing flow that has shown success in capturing complex distributions. The original paper, "Density estimation using Real NVP" by Laurent Dinh, Jascha Sohl-Dickstein, and Samy Bengio, can be found [Here](https://arxiv.org/abs/1605.08803).
@@ -72,7 +73,7 @@ The Real-NVP model has been implemented using PyTorch, a popular deep-learning f
 - Two separate networks are defined for the scaling ($s$) and translation ($t$) functions.
 - Each network consists of four fully connected layers.
 - The number of units in each layer follows an increasing-decreasing pattern: e.g., [64, 128, 128, 64].
-- Rectified Linear Unit (ReLU) activation functions are used for intermediate layers, and the final layer uses the hyperbolic tangent (tanh) activation function.
+- Rectified Linear Unit (ReLU) activation functions are used.
 
 #### NVPBlock:
 
@@ -88,7 +89,7 @@ The Real-NVP model has been implemented using PyTorch, a popular deep-learning f
 
 ### Training Parameters:
 
-- **Learning Rate:** The model is trained with a learning rate of $1 \times 10^{-5}$.
+- **Learning Rate:** The model is trained with a learning rate of $1 \times 10^{-3}$.
 - **Epochs:** Training is performed for 100 epochs.
 
 ### Training Process:
@@ -99,13 +100,16 @@ The Real-NVP model has been implemented using PyTorch, a popular deep-learning f
 ### Activation Functions:
 
 - **ReLU:** Rectified Linear Unit is used as the activation function for intermediate layers.
-- **tanh:** Hyperbolic tangent is used as the activation function for the final layer.
-
 ### Training Configuration:
 
 - The model undergoes training using the MNIST dataset for 100 epochs.
-- The learning rate is chosen to be $1 \times 10^{-5}$ to carefully control the weight updates during training.
+- The learning rate is chosen to be $1 \times 10^{-3}$ to carefully control the weight updates during training.
+  
+### Results:
+    Here are the Error values per epoch:
+    ![alt text]("./error_per_epoch.png")
 
+    
 ### Considerations:
 
 - The implementation does not include masking convolutions, as mentioned in the original paper.
