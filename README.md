@@ -106,7 +106,7 @@ The Real-NVP model has been implemented using PyTorch, a popular deep-learning f
 - The learning rate is chosen to be $1 \times 10^{-3}$ to carefully control the weight updates during training.
   
 ### Results:
-    Here are the Error values per epoch:
+- Here are the Error values per epoch:
     ![Error](error_per_epoch.png)
 
     
