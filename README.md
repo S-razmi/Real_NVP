@@ -107,7 +107,7 @@ The Real-NVP model has been implemented using PyTorch, a popular deep-learning f
   
 ### Results:
 - Here are the Error values per epoch:
-    ![Error](error_per_epoch.png)
+    <img src="error_per_epoch.png" width="200">
 
     
 ### Considerations:
