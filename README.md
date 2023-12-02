@@ -118,7 +118,7 @@ The Real-NVP model has been implemented using PyTorch, a popular deep-learning f
     - Epoch 90:
       <p><img src="90.png" width="400"></p>
   - Here are the generated images in each epoch:
-      <p><img src="https://github.com/S-razmi/Real_NVP/blob/main/movie%20(1).gif" width="400" loop="infinite"></p>
+      <p><img src="https://github.com/S-razmi/Real_NVP/blob/main/movie%20(1).gif" width="400" loop=infinite></p>
 ### Considerations:
 
 - The implementation does not include masking convolutions, as mentioned in the original paper.
