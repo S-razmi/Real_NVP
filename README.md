@@ -1,5 +1,4 @@
-<style>body {text-align: right}
-  
+<div style="text-align: justify">  
 # Real NVP Implementation in Pytorch
 
 This project is an implementation of the Real Non-Volume Preserving (Real-NVP) networks for density estimation. The Real-NVP model is a type of normalizing flow that has shown success in capturing complex distributions. The original paper, "Density estimation using Real NVP" by Laurent Dinh, Jascha Sohl-Dickstein, and Samy Bengio, can be found [Here](https://arxiv.org/abs/1605.08803).
@@ -117,5 +116,3 @@ The Real-NVP model has been implemented using PyTorch, a popular deep-learning f
 This Real-NVP implementation in PyTorch follows the architecture and training configuration described in the paper. It leverages separate networks for scaling and translation functions, incorporates custom coupling layers (NVPBlocks), and utilizes a specific pattern for the number of units in each layer. The training process involves optimizing the negative log-likelihood using SGD with a carefully chosen learning rate over 100 epochs. The implementation demonstrates the application of Real-NVP to the MNIST dataset for density estimation.
 
 This description provides an overview of the key aspects of the implementation, offering insights into the architecture, training parameters, and specific choices made during the implementation process. Adjustments and refinements can be made based on further experimentation and analysis of results.
-
-</style>
