@@ -108,8 +108,17 @@ The Real-NVP model has been implemented using PyTorch, a popular deep-learning f
 ### Results:
 - Here are the Error values per epoch:
   <p><img src="error_per_epoch.png" width="400"></p>
-
-    
+- Here are the generated Images in each epoch:
+    - Epoch 0:
+      <p><img src="0.png" width="400"></p>
+    - Epoch 9:
+      <p><img src="9.png" width="400"></p>
+    - Epoch 20:
+      <p><img src="20.png" width="400"></p>
+    - Epoch 90:
+      <p><img src="90.png" width="400"></p>
+  - Here are the generated images in each epoch:
+      <p><img src="movie (1).gif" width="400"></p>
 ### Considerations:
 
 - The implementation does not include masking convolutions, as mentioned in the original paper.
